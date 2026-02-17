@@ -15,5 +15,13 @@
     Store your answer in array c
     Print your final answer
     */
+
+    for ( int i = 0; i < 5; i++) {
+      c[i] = a[i] + b[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+      printf("C[%d] = %f\n", i, c[i]);
+    }
     return 0;
  }

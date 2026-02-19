@@ -120,17 +120,18 @@ for (int i = 0; i <= 5; i++) {
 printf("%d\n", min); */
 
 // program to find the sum, average, min and max in one loop
-int numbers[6] = {4, 12, 7, 3, 15, 9};
+/*int numbers[6] = {4, 12, 7, 3, 15, 9};
 int sum = 0;
 float avg;
 int max = numbers[0];
 int min = numbers[0];
+int size = sizeof(numbers) / sizeof(numbers[0]);
 
-for (int i = 0; i < 6; i++) {
+for (int i = 0; i < size; i++) {
 
     sum += numbers[i];
     
-    avg = float(sum) / 6.00;
+    avg = (sum) / 6.00;
     
     if (numbers[i] > max) {
         max = numbers[i];
@@ -144,10 +145,25 @@ printf("Sum of array: %d\n", sum);
 printf("Average of array: %.2f\n", avg);
 printf("Max number in array: %d\n", max);
 printf("Min number in array: %d\n", min);
+printf("%d\n", size);*/
 
+// reverse an array
+/*int numbers[] = {1, 2, 3, 4, 5};
+int length = sizeof(numbers) / sizeof(numbers[0]);
 
+for (int i = length - 1; i >= 0; i--) {
+    printf("%d ", numbers[i]);
+}*/
+// counting even numbers
+int numbers[5] = {4, 7, 12, 9, 2};
+int length = sizeof(numbers) / sizeof(numbers[0]);
+int count = 0;
 
-
-    
+for (int i = 0; i <= length - 1; i++) {
+    if (numbers[i] % 2 == 0) {
+        count++;
+    }
+}
+    printf("%d\n", count);
     return 0;
 }

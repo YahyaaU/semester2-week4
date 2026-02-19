@@ -6,10 +6,10 @@
  #include <stdio.h>
 
  int main( void ) {
-    float a[]={ 1.0,1.0,1.0,1.0,1.0 };
+    /*float a[]={ 1.0,1.0,1.0,1.0,1.0 };
     float b[]={ 2.0,3.0,4.0,5.0,6.0 };
     float c[5]; // {2.0, 3.0, 4.0, 5.0, 6.0}
-    float d;
+    float d; */
 
     /*
     Code to compute the dot product
@@ -17,7 +17,7 @@
     print your final answer
     */
 
-    for (int i = 0; i < 5; i++) {
+    /*for (int i = 0; i < 5; i++) {
       c[i] = a[i] * b[i];
     }
     for (int i = 0; i < 5; i++) {
@@ -33,7 +33,22 @@
       d = c[j] += c[j];
     }
 
+    printf("%f\n", d); */
+
+    float a[]={ 1.0,1.0,1.0,1.0,1.0 };
+    float b[]={ 2.0,3.0,4.0,5.0,6.0 };
+    float c[5]; // {2.0, 3.0, 4.0, 5.0, 6.0}
+    float d;
+
+    for (int i = 0; i < 5; i++) {
+      c[i] = a[i] * b[i];
+    }
+
+    for (int i = 0; i < 5; i++) {
+      d += c[i];
+    }
+
     printf("%f\n", d);
-*/
+
     return 0;
  }

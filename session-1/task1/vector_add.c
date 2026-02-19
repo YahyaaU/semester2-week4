@@ -10,18 +10,24 @@
     float b[]={ 2.0,3.0,4.0,5.0,6.0 };
     float c[5];
 
+    for (int i = 0; i < 5; i++) {
+      c[i] = a[i] + b[i];
+      printf("C[%d] = %f\n", i, c[i]);
+    }
+
+
     /*
     Code to compute the sum
     Store your answer in array c
     Print your final answer
     */
 
-    for ( int i = 0; i < 5; i++) {
+    /*for ( int i = 0; i < 5; i++) {
       c[i] = a[i] + b[i];
     }
 
     for (int i = 0; i < 5; i++) {
       printf("C[%d] = %f\n", i, c[i]);
-    }
+    }*/
     return 0;
  }

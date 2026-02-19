@@ -16,5 +16,18 @@
     Store your answer in matrix c
     Print your final answer
     */
+
+    // set all the entries in matrices of a and b to 1
+    for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 4; j++) {
+         a[i][j] = b[i][j] = 1;
+
+      c[i][j] = a[i][j] + b[i][j];
+
+      printf("C[%d][%d] = %f\n", i, j, c[i][j]);
+      }
+    }
+
+
     return 0;
  }

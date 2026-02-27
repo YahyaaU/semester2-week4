@@ -14,6 +14,13 @@
 #include <stdlib.h>
 
 int main( int argc, char **argv ) {
+
+    int a = atoi(argv[1]);
+    double b = atof(argv[3]);
+
+    printf("Integer: %d\n", a);
+    printf("String: %s\n", argv[2]);
+    printf("Double float: %.2f\n", b);
     
     /*
     Your code
